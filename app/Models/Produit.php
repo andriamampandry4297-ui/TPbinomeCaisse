@@ -14,28 +14,24 @@ class Produit extends Model
     protected $returnType       = 'array';
 
     protected $allowedFields    = [
-        'designation',
-        'prix',
-        'quantite_stock'
+        'Produit',
+        'Prix_Unitaire',
+        'Quantite'
     ];
 
     protected $useTimestamps = false;
 
     // Validation
     protected $validationRules = [
-        'designation'    => 'required|min_length[2]',
-        'prix'           => 'required|decimal',
-        'quantite_stock' => 'required|integer'
+        'Produit'    => 'required|min_length[2]',
+        'Quantite' => 'required|integer'
     ];
 
     protected $validationMessages = [
-        'designation' => [
+        'Produit' => [
             'required' => 'La désignation est obligatoire.'
         ],
-        'prix' => [
-            'required' => 'Le prix est obligatoire.'
-        ],
-        'quantite_stock' => [
+        'Quantite' => [
             'required' => 'La quantité en stock est obligatoire.'
         ]
     ];

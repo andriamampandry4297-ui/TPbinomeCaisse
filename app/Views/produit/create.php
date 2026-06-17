@@ -12,10 +12,9 @@
 <form action="<?= site_url('produit/store') ?>" method="post">
 
     <label>Désignation :</label><br>
-    <input type="text" name="designation" required><br><br>
+    <input type="text" name="Produit" required><br><br>
 
-    <label>Prix :</label><br>
-    <input type="number" step="0.01" name="prix" required><br><br>
+
 
     <label>Quantité en stock :</label><br>
     <input type="number" name="quantite_stock" required><br><br>

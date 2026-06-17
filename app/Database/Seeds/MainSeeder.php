@@ -17,11 +17,11 @@ class MainSeeder extends Seeder
 
         // Insertion des 5 produits
         $produits = [
-            ['designation' => 'Riz Local 1kg', 'prix' => 3500, 'quantite_stock' => 100],
-            ['designation' => 'Huile de table 1L', 'prix' => 9000, 'quantite_stock' => 50],
-            ['designation' => 'Sucre Blanc 1kg', 'prix' => 4200, 'quantite_stock' => 80],
-            ['designation' => 'Savon de ménage', 'prix' => 1500, 'quantite_stock' => 200],
-            ['designation' => 'Pâtes Panzani 500g', 'prix' => 3800, 'quantite_stock' => 120],
+            ['Produit' => 'Riz Local 1kg', 'Prix_Unitaire' => 3500, 'Quantite' => 100],
+            ['Produit' => 'Huile de table 1L', 'Prix_Unitaire' => 9000, 'Quantite' => 50],
+            ['Produit' => 'Sucre Blanc 1kg', 'Prix_Unitaire' => 4200, 'Quantite' => 80],
+            ['Produit' => 'Savon de ménage', 'Prix_Unitaire' => 1500, 'Quantite' => 200],
+            ['Produit' => 'Pâtes Panzani 500g', 'Prix_Unitaire' => 3800, 'Quantite' => 120],
         ];
         $this->db->table('produits')->insertBatch($produits);
     }

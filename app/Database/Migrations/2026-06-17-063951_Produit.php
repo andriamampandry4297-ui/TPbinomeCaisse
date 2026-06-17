@@ -15,15 +15,15 @@ class Produit extends Migration
                 'constraint'     => 11,
                 'auto_increment' => true,
             ],
-            'designation' => [
+            'Produit' => [
                 'type'       => 'VARCHAR',
                 'constraint' => '255',
             ],
-            'prix' => [
+            'Prix_Unitaire' => [
                 'type'       => 'DECIMAL',
                 'constraint' => '10,2',
             ],
-            'quantite_stock' => [
+            'Quantite' => [
                 'type'       => 'INTEGER',
                 'constraint' => 11,
                 'default'    => 0,

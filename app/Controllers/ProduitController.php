@@ -31,9 +31,9 @@ class ProduitController extends BaseController
     public function store()
     {
         $this->produit->save([
-            'designation'    => $this->request->getPost('designation'),
-            'prix'           => $this->request->getPost('prix'),
-            'quantite_stock' => $this->request->getPost('quantite_stock')
+            'Produit'        => $this->request->getPost('Produit'),
+            'Prix_Unitaire' => $this->request->getPost('Prix_Unitaire'),
+            'Quantite'       => $this->request->getPost('Quantite')
         ]);
 
         return redirect()->to('/produits');
@@ -51,9 +51,9 @@ class ProduitController extends BaseController
     public function update($id)
     {
         $this->produit->update($id, [
-            'designation'    => $this->request->getPost('designation'),
-            'prix'           => $this->request->getPost('prix'),
-            'quantite_stock' => $this->request->getPost('quantite_stock')
+            'Produit'        => $this->request->getPost('Produit'),
+            'Prix_Unitaire' => $this->request->getPost('Prix_Unitaire'),
+            'Quantite'       => $this->request->getPost('Quantite')
         ]);
 
         return redirect()->to('/produits');
