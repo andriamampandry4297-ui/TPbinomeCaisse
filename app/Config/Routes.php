@@ -5,7 +5,15 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::index');
+$routes->get('/', 'AchatController::selectCaisse');
+$routes->get('/caisse', 'AchatController::selectCaisse');
+$routes->post('/caisse/select', 'AchatController::chooseCaisse');
+
+$routes->get('/achats', 'AchatController::index');
+$routes->post('/achats/add', 'AchatController::add');
+$routes->post('/achats/close', 'AchatController::close');
+$routes->get('/achats/reset', 'AchatController::reset');
+
 $routes->get('/produits', 'ProduitController::index');
 $routes->get('/produit/create', 'ProduitController::create');
 $routes->post('/produit/store', 'ProduitController::store');
