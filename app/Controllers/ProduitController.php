@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use App\Models\ProduitModel;
+use App\Models\Produit;
 
 class ProduitController extends BaseController
 {
