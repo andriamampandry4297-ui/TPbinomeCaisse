@@ -1,0 +1,163 @@
+CRITICAL - 2026-06-17 08:04:32 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "sqlite3" is not loaded. Install and enable it to use "SQLite3" driver.
+[Method: GET, Route: produits]
+in SYSTEMPATH\Database\Database.php on line 186.
+ 1 SYSTEMPATH\Database\Database.php(59): CodeIgniter\Database\Database->checkDbExtension('SQLite3')
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(150): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\ProduitController.php(13): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\ProduitController->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\MR Rojo\\TPbinomeCaisse\\public\\index.php')
+CRITICAL - 2026-06-17 08:04:32 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "sqlite3" is not loaded. Install and enable it to use "SQLite3" driver.
+[Method: GET, Route: produits]
+in SYSTEMPATH\Database\Database.php on line 186.
+ 1 SYSTEMPATH\Database\Database.php(59): CodeIgniter\Database\Database->checkDbExtension('SQLite3')
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(150): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\ProduitController.php(13): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\ProduitController->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\MR Rojo\\TPbinomeCaisse\\public\\index.php')
+ERROR - 2026-06-17 08:07:42 --> Error connecting to the database: mysqli_sql_exception: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in D:\MR Rojo\TPbinomeCaisse\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\MR Rojo\TPbinomeCaisse\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'caisse', 3306, '', 0)
+#1 D:\MR Rojo\TPbinomeCaisse\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\MR Rojo\TPbinomeCaisse\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\MR Rojo\TPbinomeCaisse\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\MR Rojo\TPbinomeCaisse\system\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\MR Rojo\TPbinomeCaisse\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\MR Rojo\TPbinomeCaisse\app\Controllers\ProduitController.php(19): CodeIgniter\BaseModel->findAll()
+#7 D:\MR Rojo\TPbinomeCaisse\system\CodeIgniter.php(951): App\Controllers\ProduitController->index()
+#8 D:\MR Rojo\TPbinomeCaisse\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+#9 D:\MR Rojo\TPbinomeCaisse\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\MR Rojo\TPbinomeCaisse\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\MR Rojo\TPbinomeCaisse\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\MR Rojo\TPbinomeCaisse\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\MR Rojo\TPbinomeCaisse\system\rewrite.php(44): require_once('D:\\MR Rojo\\TPbi...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in D:\MR Rojo\TPbinomeCaisse\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\MR Rojo\TPbinomeCaisse\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\MR Rojo\TPbinomeCaisse\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\MR Rojo\TPbinomeCaisse\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\MR Rojo\TPbinomeCaisse\system\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\MR Rojo\TPbinomeCaisse\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\MR Rojo\TPbinomeCaisse\app\Controllers\ProduitController.php(19): CodeIgniter\BaseModel->findAll()
+#6 D:\MR Rojo\TPbinomeCaisse\system\CodeIgniter.php(951): App\Controllers\ProduitController->index()
+#7 D:\MR Rojo\TPbinomeCaisse\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+#8 D:\MR Rojo\TPbinomeCaisse\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\MR Rojo\TPbinomeCaisse\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 D:\MR Rojo\TPbinomeCaisse\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\MR Rojo\TPbinomeCaisse\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\MR Rojo\TPbinomeCaisse\system\rewrite.php(44): require_once('D:\\MR Rojo\\TPbi...')
+#13 {main}
+CRITICAL - 2026-06-17 08:07:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+[Method: GET, Route: produits]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `produits`', [], false)
+ 3 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProduitController.php(19): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProduitController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\MR Rojo\\TPbinomeCaisse\\public\\index.php')
+CRITICAL - 2026-06-17 08:10:26 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "sqlite3" is not loaded. Install and enable it to use "SQLite3" driver.
+[Method: GET, Route: produits]
+in SYSTEMPATH\Database\Database.php on line 186.
+ 1 SYSTEMPATH\Database\Database.php(59): CodeIgniter\Database\Database->checkDbExtension('SQLite3')
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(150): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\ProduitController.php(13): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\ProduitController->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\MR Rojo\\TPbinomeCaisse\\public\\index.php')
+CRITICAL - 2026-06-17 08:10:26 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "sqlite3" is not loaded. Install and enable it to use "SQLite3" driver.
+[Method: GET, Route: produits]
+in SYSTEMPATH\Database\Database.php on line 186.
+ 1 SYSTEMPATH\Database\Database.php(59): CodeIgniter\Database\Database->checkDbExtension('SQLite3')
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(150): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\ProduitController.php(13): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\ProduitController->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\MR Rojo\\TPbinomeCaisse\\public\\index.php')
+CRITICAL - 2026-06-17 08:10:26 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "sqlite3" is not loaded. Install and enable it to use "SQLite3" driver.
+[Method: GET, Route: produits]
+in SYSTEMPATH\Database\Database.php on line 186.
+ 1 SYSTEMPATH\Database\Database.php(59): CodeIgniter\Database\Database->checkDbExtension('SQLite3')
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(150): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\ProduitController.php(13): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\ProduitController->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\MR Rojo\\TPbinomeCaisse\\public\\index.php')
+CRITICAL - 2026-06-17 08:10:26 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "sqlite3" is not loaded. Install and enable it to use "SQLite3" driver.
+[Method: GET, Route: produits]
+in SYSTEMPATH\Database\Database.php on line 186.
+ 1 SYSTEMPATH\Database\Database.php(59): CodeIgniter\Database\Database->checkDbExtension('SQLite3')
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(150): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\ProduitController.php(13): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\ProduitController->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\MR Rojo\\TPbinomeCaisse\\public\\index.php')
+CRITICAL - 2026-06-17 08:10:27 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "sqlite3" is not loaded. Install and enable it to use "SQLite3" driver.
+[Method: GET, Route: produits]
+in SYSTEMPATH\Database\Database.php on line 186.
+ 1 SYSTEMPATH\Database\Database.php(59): CodeIgniter\Database\Database->checkDbExtension('SQLite3')
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(150): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\ProduitController.php(13): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\ProduitController->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\MR Rojo\\TPbinomeCaisse\\public\\index.php')
+CRITICAL - 2026-06-17 08:10:27 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "sqlite3" is not loaded. Install and enable it to use "SQLite3" driver.
+[Method: GET, Route: produits]
+in SYSTEMPATH\Database\Database.php on line 186.
+ 1 SYSTEMPATH\Database\Database.php(59): CodeIgniter\Database\Database->checkDbExtension('SQLite3')
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(150): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\ProduitController.php(13): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\ProduitController->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\MR Rojo\\TPbinomeCaisse\\public\\index.php')
