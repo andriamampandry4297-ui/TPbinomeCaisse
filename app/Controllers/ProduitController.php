@@ -10,7 +10,7 @@ class ProduitController extends BaseController
 
     public function __construct()
     {
-        $this->produit = new ProduitModel();
+        $this->produit = new Produit();
     }
 
     // Liste des produits

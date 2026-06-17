@@ -11,5 +11,9 @@ th{background:#fafafa}
 .form-actions .action-link{background:#6c757d}
 button{background:#28a745;color:#fff;border:none;padding:8px 12px;border-radius:4px;cursor:pointer}
 button:hover{opacity:.95}
+.alert{margin-top:16px;padding:10px;border-radius:4px}
+.alert-error{background:#f8d7da;color:#842029;border:1px solid #f5c2c7}
+.alert-success{background:#d1e7dd;color:#0f5132;border:1px solid #badbcc}
+.info-bar{margin-bottom:20px;padding:10px;background:#e7f1ff;border:1px solid #cfe2ff;border-radius:4px}
 .table-actions a{margin-right:8px;color:#2b7cff;text-decoration:none}
 .table-actions a:hover{text-decoration:underline}
