@@ -2,4 +2,4 @@
     [OK] Produit
     [OK] Caisse
     [OK] Achat
-[] Insertion des donne
+[OK] Insertion des donne
